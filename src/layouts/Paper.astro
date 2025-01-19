@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Plain Layout</title>
+	</head>
+	<body class="bg-gray-200">
+		<main id="paper" class="bg-white m-auto mt-8">
+			<slot />
+		</main>
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+	#paper {
+		width: min(80%, 800px);
+		border-radius: 2px;
+		box-shadow: grey 0.1px 0.1px 0.1px 0.1px;
+		min-height: 100vh;
+	}
+</style>
